@@ -9,7 +9,7 @@ EEG.event(bnd_ind) = [];
 
 %% Removing EEG.event rows filled with rejected trials (trial deleted in visual rejection)
 
-load('S:\Work\M.S\Thesis\Subject3_Preprocess (Jan 1st, 2024)\trig\rejected_trials_3.mat')
+load('S:\Work\M.S\Thesis\preprocess\files\rejected_trials_3.mat')
 
 ev = zeros(1,length(EEG.event));
 for i=length(EEG.event):-1:1

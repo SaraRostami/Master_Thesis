@@ -1,9 +1,9 @@
 % %% Load Block Type fiele for the subject
-load('S:\Work\M.S\Thesis\Subject3_Preprocess (Jan 1st, 2024)\Session3 (Yasamin)\blocks.mat')
+load('S:\Work\M.S\Thesis\preprocess\sub3_raw_data\blocks.mat')
 % 
 % %% Load the Trials file for the subject
 % 
-load('S:\Work\M.S\Thesis\Subject3_Preprocess (Jan 1st, 2024)\Session3 (Yasamin)\trials.mat')
+load('S:\Work\M.S\Thesis\preprocess\sub3_raw_data\trials.mat')
 
 %% Extract labels using `trials.mat' and `blocks.mat`
 

@@ -1,7 +1,7 @@
 clc;
 clear;
 %%
-directory_path = '.\Session3 (Yasamin)\';
+directory_path = '.\sub3_raw_data\';
 
 filenames = ls(fullfile(directory_path, 'sub3_p_*.mat'));
 appended_data = load(fullfile(directory_path,filenames(1,:)));
@@ -12,6 +12,3 @@ for i = 2:length(filenames(:,1))
     clear tmp
 
 end
-
-trials = load(fullfile(directory_path,'trials.mat'));
-trials = trials.trials;
