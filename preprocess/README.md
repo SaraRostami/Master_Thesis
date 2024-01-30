@@ -27,7 +27,7 @@
     - Remove the rejected trials specified in `rejected_trials_{subject#}.mat` from the data
     - Add 10'000 to the trigger of the 2nd image in a trial, so that they become distinguishable
 14.  Extract epochs based on the 2nd img's events (Triggers > 10'000): (-0.2 sec, 0.6 sec)
-15. Selected bad ICs (IC3, IC4) by looking at:
+15. Selected bad ICs (for sub3: IC3, IC4) by looking at:
     - Components ERPs, Spectra maps, IC labeling
 16. Re-referencing:
     - Add the reference channel's value to all channels using the script `rereferencing_part1.m`
