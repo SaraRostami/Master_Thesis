@@ -6,5 +6,5 @@ To investigate the predictive coding theory, I employ Electroencephalography (EE
 Considering the dynamic involvement of the prefrontal cortex in predicting incoming visual signals and the distinguished role of temporal cortices in encoding complex visual stimuli, we posit a distinctive contribution of frontotemporal circuits in the representation of complex objects within the context of expectation.
 
 ## Task Description
-You can learn more about the EEG task paradigm [here]().
+You can learn more about the EEG task paradigm [here](https://github.com/SaraRostami/Master_Thesis/tree/main/EEG_task).
 
