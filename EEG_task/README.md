@@ -1,1 +1,2 @@
-# rsexFace
+# EEG Task Paradigm
+We conducted an EEG study utilizing the Rapid Serial Visual Presentation (RSVP) paradigm via [Psychtoolbox](http://psychtoolbox.org/), collecting EEG data from participants while presenting stimuli on a screen. The task included match and non-match trials featuring faces and houses. In match trials, a priming image was paired with an identical target, while non-match trials presented a different image from the same category. Participants completed four blocks of trials, with two emphasizing match trials (80% match, 20% non-match) and the other two predominantly filled with non-match trials. Additionally, participants performed a non-relevant task, pressing the space button upon encountering a colored stimulus. 
