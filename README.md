@@ -9,5 +9,5 @@ Considering the dynamic involvement of the prefrontal cortex in predicting incom
 You can learn more about the EEG task paradigm [here](https://github.com/SaraRostami/Master_Thesis/tree/main/EEG_task).
 
 ## Preprocess
-You can learn more about our preprocessing pipeline [here](https://github.com/SaraRostami/Master_Thesis/tree/main/EEG_task).
+You can learn more about our preprocessing pipeline [here](https://github.com/SaraRostami/Master_Thesis/tree/main/preprocess).
 
