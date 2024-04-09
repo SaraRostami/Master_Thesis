@@ -9,7 +9,7 @@ EEG = eeg_checkset( EEG );
 pop_eegplot( EEG, 1, 1, 1);
 EEG = pop_select( EEG, 'nochannel',1);
 EEG = eeg_checkset( EEG );
-EEG=pop_chanedit(EEG, 'load',{'S:\\Work\\M.S\\Thesis\\preprocess\\files\\location_xyz_128.txt','filetype','xyz'});
+EEG=pop_chanedit(EEG, 'load',{'C:\\SaraDrive\\Githube\\Master_Thesis\\preprocess\\files\\location_xyz_128.txt','filetype','xyz'});
 EEG = eeg_checkset( EEG );
 EEG = pop_eegfiltnew(EEG, 'locutoff',1,'hicutoff',100,'plotfreqz',1);
 EEG.setname='sub3_bp';

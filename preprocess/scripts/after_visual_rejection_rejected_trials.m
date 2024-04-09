@@ -35,7 +35,7 @@ trigger_(int32(corrected_latency)) = 1;
 trigger_(int32(corrected_latency_end)) = -1;
 trigger_ = cumsum(trigger_);
 %% save the trigger signal
-cd('S:\Work\M.S\Thesis\preprocess\files');
+cd('.\files');
 if isfile(['rejected_trials' num2str(session_number) '.mat'])
 error('rejected_trials alraedy exist.'); 
 end

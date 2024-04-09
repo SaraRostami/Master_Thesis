@@ -24,7 +24,7 @@ end
 
 % the output is temp_new which is a pulse-shape sequence
 
-cd('S:\Work\M.S\Thesis\preprocess\files');
+cd('.\files');
 if isfile(['trials_pulses' num2str(session_number) '.mat'])
 error('trials_pulseses alraedy exist.'); 
 end

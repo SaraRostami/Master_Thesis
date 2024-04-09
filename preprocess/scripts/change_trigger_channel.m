@@ -1,5 +1,5 @@
 %% load the trials info file
-load('S:\Work\M.S\Thesis\preprocess\sub3_raw_data\trials.mat');
+load('.\sub3_raw_data\trials.mat');
 
 %% Extract each event (image1:150, image2: 250, and colored ones: to be removed)
 trig_ch = appended_data(130,:);
