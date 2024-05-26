@@ -1,9 +1,9 @@
 % %% Load Block Type fiele for the subject
-load('S:\Work\M.S\Thesis\preprocess\sub3_raw_data\blocks.mat')
+load('\sub3_raw_data\blocks.mat')
 % 
 % %% Load the Trials file for the subject
 % 
-load('S:\Work\M.S\Thesis\preprocess\sub3_raw_data\trials.mat')
+load('\sub3_raw_data\trials.mat')
 
 %% Extract labels using `trials.mat' and `blocks.mat`
 
@@ -30,53 +30,3 @@ end
 for i=1:length(EEG.event)
     EEG.event(i).type=labels{EEG.event(i).type - 10000};
 end
-
-%%
-% labels = {};
-% for i = 1:900
-%     N = split(trials(i).trialType,"");
-%     C = split(trials(i).fimgName,"");
-% 
-%     if strcmp (N(2),"M")
-%          if strcmp (C(2),"f")
-%              labels{i} = ["mmf"];
-%          elseif strcmp (C(2),"I")
-%              labels{i} = ["mmif"];
-%          elseif strcmp (C(2),"h")
-%              labels{i} = ["mmh"];
-%          end
-%     elseif strcmp (N(2),"n")
-%          if strcmp (C(2),"f")
-%              labels{i} = ["mnf"];
-%          elseif strcmp (C(2),"I")
-%              labels{i} = ["mnif"];
-%          elseif strcmp (C(2),"h")
-%              labels{i} = ["mnh"];
-%          end
-%     end
-% end
-% 
-% for i = 901:1800
-%     N = split(trials(i).trialType,"");
-%     C = split(trials(i).fimgName,"");
-% 
-%     if strcmp (N(2),"M")
-%          if strcmp (C(2),"f")
-%              labels{i} = ["nmf"];
-%          elseif strcmp (C(2),"I")
-%              labels{i} = ["nmif"];
-%          elseif strcmp (C(2),"h")
-%              labels{i} = ["nmh"];
-%          end
-%     elseif strcmp (N(2),"n")
-%          if strcmp (C(2),"f")
-%              labels{i} = ["nnf"];
-%          elseif strcmp (C(2),"I")
-%              labels{i} = ["nnif"];
-%          elseif strcmp (C(2),"h")
-%              labels{i} = ["nnh"];
-%          end
-%     end
-% end
-
-
