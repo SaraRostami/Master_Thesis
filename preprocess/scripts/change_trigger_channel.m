@@ -1,11 +1,11 @@
 %% load the trials info file
-load('.\sub3_raw_data\trials.mat');
+load('\sub3_raw_data\trials.mat');
 
 %% Extract each event (image1:150, image2: 250, and colored ones: to be removed)
 trig_ch = appended_data(130,:);
 
 img1_indices = find(trig_ch ==150);
-img2_indices = find(trig_ch ==250);
+img2_indices = find(trig_ch > 150); % for this subject, the trigger of the second image is 242 instead of 250!!!
 colored_trials = find([trials.colored] ==1);
 
 
@@ -24,7 +24,7 @@ trial_num = 2;
 for i = 2:length(img1_indices)
     if img1_indices(i-1) +1 ~= img1_indices(i)
         if ~ismember(trial_num, colored_trials)
-            img1_trig(img1_indices(i-1)) =  trial_num;
+            img1_trig(img1_indices(i)) =  trial_num;
         end
             trial_num = trial_num + 1;
     end
@@ -40,7 +40,7 @@ trial_num = 2;
 for i = 2:length(img2_indices)
     if img2_indices(i-1) +1 ~= img2_indices(i)
         if ~ismember(trial_num, colored_trials)
-            img2_trig(img2_indices(i-1)) =  trial_num;
+            img2_trig(img2_indices(i)) =  trial_num;
         end
             trial_num = trial_num + 1;
     end
