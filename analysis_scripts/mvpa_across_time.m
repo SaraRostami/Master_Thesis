@@ -1,4 +1,4 @@
-function [] = mvpa_across_time(class1,class2,chnls,classifier,folds,metric,repeat,titlename,categories)
+function [stat] = mvpa_across_time(class1,class2,chnls,classifier,folds,metric,repeat)%,titlename,categories)
     cfg = [] ;
     cfg.method           = 'mvpa';
     cfg.features         = 'chan';
@@ -13,8 +13,8 @@ function [] = mvpa_across_time(class1,class2,chnls,classifier,folds,metric,repea
     cfg.design           = [ones(length(class1.time),1); zeros(length(class2.time),1)];
 
     stat = ft_timelockstatistics(cfg, class1, class2);
-    mv_plot_result(stat.mvpa, stat.time)
-    title(sprintf('Classification %s %s (%s)',metric,titlename, categories))
-    saveas(gcf,sprintf('sub5_mvpa_across_time_%s(%s).png',titlename,categories))
+%     mv_plot_result(stat.mvpa, stat.time)
+%     title(sprintf('Classification %s %s (%s)',metric,titlename, categories))
+%     saveas(gcf,sprintf('sub3_mvpa_across_time_%s(%s).png',titlename,categories))
     
 end
